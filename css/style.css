@@ -125,10 +125,31 @@ body {
   gap: 50px;
 }
 
+.header__nav__list__ul__burger {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  width: 300px;
+  height: auto;
+  padding-top: 50px;
+  background-color: #5A5A5A;
+  transition: 1s;
+  height: 100vh;
+}
+
 .header__nav__list__burder_menu {
   display: none;
   gap: 4px;
   margin-left: auto;
+}
+
+.header__nav__list__burger__ul__item {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: right;
+  padding-left: 20px;
 }
 
 .header__nav__list__burder_menu__item {
@@ -178,6 +199,14 @@ body {
   }
   .header__nav__list {
     display: none;
+  }
+  .header__nav__list__ul__burger.active {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    transition: 1s;
   }
   .header__nav__list__burder_menu {
     display: flex;

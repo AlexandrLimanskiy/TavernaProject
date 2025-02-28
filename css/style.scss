@@ -102,28 +102,47 @@ body {
 }
 
 .content {
-    max-width: 1170px;
+    max-width: 1200px;
+    padding: 0px 15px;
     margin: 0 auto;   
 }
 
 .header {
     padding-top: 50px;
 }
+
 .header__nav {
     display: flex;
     align-items: center;
     margin-bottom: 100px;
 }
+
 .header__nav__logo {
 }
+
 .header__nav__list {
     margin: 0 auto;
 }
+
 .header__nav__list__ul {
     display: flex;
     gap: 50px;
 }
+
 .header__nav__list__ul__item {
+}
+
+.header__nav__list__burder_menu {
+    display: none;
+    gap: 4px;
+    margin-left: auto;
+}
+
+.header__nav__list__burder_menu__item {
+    flex-direction: column;
+    width: 20px;
+    height: 1px;
+    background-color: #f27520;
 }
 
 .header__offer {
@@ -131,20 +150,26 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 .header__offer__about {
 }
+
 .header__offer__title {
 }
+
 .header__offer__title__text {
     font-family: 'rubicBold', sans-serif;
     font-size: 48px;
     margin-bottom: 20px;
 }
+
 .header__offer__description {
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 20px;
+    max-width: 658px;
 }
+
 .header__offer__button {
     button {
         padding: 16px 38px;
@@ -152,7 +177,59 @@ body {
         border-radius: 10px;
     }
 }
+
 .header__offer__img {
     max-width: 512px;
     max-height: 512px;
+}
+
+@media (max-width: 430px) {
+
+    .header {
+        padding-top: 10px;
+    }
+
+    .header__nav__logo {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .header__nav__list {
+        display: none;
+    }
+
+    .header__nav__list__burder_menu {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    .header__offer__title__text {
+        font-family: 'rubicBold', sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .header__offer__description {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .header__offer__button {
+        display: flex;
+        justify-content: center;
+        button {
+            padding: 10px 25px;
+            font-size: 12px;
+            background: #f27520;
+            border-radius: 10px;
+        }
+    }
+    .header__offer__img {
+        display: none;
+    }
 }
